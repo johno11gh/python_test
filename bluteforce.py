@@ -44,7 +44,7 @@ from selenium.webdriver.common.keys import Keys
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 driver = webdriver.Chrome("/usr/local/bin/chromedriver")
-#driver.get('http://mmoloda.com/pso2/delete.php?id=147731&ext=0')
+
 driver.get('http://localhost:8888/passwordrock/index.php')
 
 
