@@ -38,10 +38,10 @@ import json
 
 
 #TwitterAPI
-CK = 'MOUAnEZcVXbuymSvEq4GSPCqR' #consumer_key
-CS = 'kGcCpaKTTh5W3bR3f05gzpemhsbMmoTKvYvoYPSptAq4Dwnn8r' #consumer_secret
-AT = '1254808886667665409-doIXOMOrC1shBHUQUz5dHCvgQ0z9Nc' #Access_token
-AS = 'Vtjq1jEtsE4BUgv07aAquUUVhSh3bYNlUi4ISiBh6vEYz' #Access_token_secret
+CK = '' #consumer_key
+CS = '' #consumer_secret
+AT = '-' #Access_token
+AS = '' #Access_token_secret
 auth = tweepy.OAuthHandler(CK, CS)
 auth.set_access_token(AT, AS)
 
@@ -54,8 +54,8 @@ twitter_api = tweepy.API(auth, wait_on_rate_limit = True, wait_on_rate_limit_not
 
 #収集ツイート数＆ワード＆収集時刻設定
 count = 1
-search_word = '#PSO2集会告知 -filter:retweets'
-#search_word = '(from:clear031) -filter:replies'
+search_word = ''
+#search_word = '(from:****) -filter:replies'
 
 
 # In[5]:
